@@ -8,7 +8,14 @@ import 'package:google_fonts/google_fonts.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+      apiKey: "AIzaSyAzJatbz7jq8etp5YHAPfzpCYdF_kLmkBY", // paste your api key here
+      appId: "1:242611032701:android:cb17df521cf2452cb85714", //paste your app id here
+      messagingSenderId: "242611032701", //paste your messagingSenderId here
+      projectId: "glance-gdsc-wow", //paste your project id here
+    ),
+  );
 
   runApp(const MyApp());
 }
