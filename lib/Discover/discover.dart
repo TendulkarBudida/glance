@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
+import 'package:carousel_slider/carousel_slider.dart' as carousel;
 import 'package:cloud_firestore/cloud_firestore.dart';
-
-import 'dart:typed_data';
-import 'package:collection/collection.dart';
 
 import 'blog_from_carousel.dart';
 
@@ -21,7 +18,7 @@ class _DiscoverState extends State<Discover> {
   final List<String> titleList = [];
   final List<String> idList = [];
 
-  final carousel_slider.CarouselController _controller = carousel_slider.CarouselController();
+  final carousel.CarouselSliderController _controller = carousel.CarouselSliderController();
 
   @override
   void initState() {
@@ -184,8 +181,8 @@ class _DiscoverState extends State<Discover> {
       ),
     )).toList();
 
-    return carousel_slider.CarouselSlider(
-      options: carousel_slider.CarouselOptions(
+    return carousel.CarouselSlider(
+      options: carousel.CarouselOptions(
         aspectRatio: 9 / 16,
         height: 400,
 
