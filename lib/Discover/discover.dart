@@ -124,7 +124,6 @@ class _DiscoverState extends State<Discover> {
   }
 
   Widget getCarousel() {
-
     final List<Widget> imageSliders = imgList.map((item) => GestureDetector(
       onTap: () {
         print('Tapped on: $item');

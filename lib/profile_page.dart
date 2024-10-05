@@ -14,7 +14,8 @@ class _ProfilePageState extends State<ProfilePage> {
   User? user = FirebaseAuth.instance.currentUser;
   final auth = AuthService();
   final firestore = FirebaseFirestore.instance;
-  final storage = FirebaseStorage.instance;
+  // final storage = FirebaseStorage.instance;
+  final storage = FirebaseStorage.instanceFor(bucket: 'glance-gdsc-wow');
 
   String? name;
   String? phone;
