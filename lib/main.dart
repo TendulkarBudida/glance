@@ -10,10 +10,10 @@ Future<void> main() async {
 
   await Firebase.initializeApp(
     options: const FirebaseOptions(
-      apiKey: "AIzaSyAzJatbz7jq8etp5YHAPfzpCYdF_kLmkBY", // paste your api key here
-      appId: "1:242611032701:android:cb17df521cf2452cb85714", //paste your app id here
-      messagingSenderId: "242611032701", //paste your messagingSenderId here
-      projectId: "glance-gdsc-wow", //paste your project id here
+      apiKey: YOUR_API_KEY, // paste your api key here
+      appId: YOUR_APP_ID, //paste your app id here
+      messagingSenderId: YOUR_MESSAGING_SENDER_ID, //paste your messagingSenderId here
+      projectId: YOUR_PROJECT_ID, //paste your project id here
     ),
   );
 
