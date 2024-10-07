@@ -10,6 +10,7 @@ Future<void> main() async {
 
   await Firebase.initializeApp(
     options: const FirebaseOptions(
+      // GO TO .gitignore FILE AND PASTE YOUR API KEY, APP ID, MESSAGING SENDER ID, PROJECT ID
       apiKey: YOUR_API_KEY, // paste your api key here
       appId: YOUR_APP_ID, //paste your app id here
       messagingSenderId: YOUR_MESSAGING_SENDER_ID, //paste your messagingSenderId here
